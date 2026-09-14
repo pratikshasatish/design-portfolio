@@ -52,6 +52,14 @@ const projects = [
     description: "A compact oil painting organizer designed to reduce clutter and maximize efficiency.",
     color: "#5a3a1a",
   },
+  {
+  id: 7,
+  title: "Arc SSG",
+  category: "Product Design · Hardware/Software",
+  year: "2026",
+  description: "A heads-up display goggle system that overlays real-time skiing data directly into the rider's line of sight.",
+  color: "#0f3d4a",
+},
 ]
 
 const WORDS_TO_HIDE = [

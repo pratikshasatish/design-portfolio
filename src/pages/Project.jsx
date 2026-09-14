@@ -103,6 +103,20 @@ const projects = [
   outcome: "A fully built wooden organizer with a three-tier drawer system, integrated paint rack, and grooved brush holder, designed with modular potential for future customization — including left-handed configurations and expanded storage.",
   takeaway: "This project taught me how to combine user-focused design with practical engineering. Through iterative prototyping and usability testing, I learned to translate feedback into meaningful improvements while designing for diverse users. I strengthened my skills in space optimization, woodworking, and prototyping while keeping scalability in mind. Future iterations aim to expand accessibility, with features like modular attachments and customizable layouts to meet the needs of more artists.",
 },
+{
+  id: 7,
+  title: "Arc SSG",
+  category: "Product Design · Hardware/Software",
+  year: "2026",
+  color: "#0f3d4a",
+  role: "Market Research & App Development",
+  skills: ["Market Research", "App Design", "UX Research", "Product Strategy", "Wireframing"],
+  overview: "Arc SSG is a heads-up display (HUD) system for ski and snowboard goggles that overlays real-time data — speed, altitude, temperature, navigation, and phone notifications — directly into the rider's field of view. Designed as a modular add-on compatible with a wide range of goggle styles, the system pairs with a companion mobile app for configuring preferences, tracking run history, and viewing social features, eliminating the need to pull out a phone on the mountain.",
+  problem: "Skiers and snowboarders frequently use their phones on the slopes to check data, respond to messages, or navigate — creating serious safety risks by taking their eyes off the terrain and increasing the chance of collisions or losing gear like phones and gloves in the cold. Existing wearables like smart watches require the same distracting look-away interaction, and no current product puts live data directly into a skier's line of sight.",
+  process: "The team built a working prototype through four iterations: starting with sensor validation and serial monitor output, moving to web-based HUD rendering with live serial data, then wireless BLE data streaming with a standalone HTML HUD, and finally integrating a Micro-OLED screen with a beamsplitter to project through bird-path optics onto the goggle visor. The current prototype uses a 3D-printed enclosure housing a Raspberry Pi Zero, IMU sensor, ESP32, and BME680 temperature sensor. As lead on market research and app development, I conducted competitive analysis against products like Sirius AR and Rekkie, defined the target user persona (avid skiers spending 10+ days per season), and designed the companion app wireframe covering login, HUD configuration, and a navigational map feature for trail data, hazard zones, and live rider tracking.",
+  outcome: "A functional prototype validating that live sensor data can be rendered through an optical HUD in real time, alongside a defined go-to-market strategy: a technology licensing model where Arc SSG's HUD, sensor platform, and companion software are licensed to established goggle manufacturers rather than competing directly as a hardware brand. Market sizing placed the addressable premium goggle market at $2.7–3.6 billion annually, with a companion app subscription tier as a secondary recurring revenue stream.",
+  takeaway: "This project sharpened my ability to connect user research with product strategy on a hardware-software product — translating a real safety problem into both a validated prototype and a business model. Working across market research, competitive positioning, and app design taught me how technical feasibility, user behavior, and business viability need to move together rather than being solved in isolation.",
+},s
 ]
 
 function Project() {
