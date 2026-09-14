@@ -60,7 +60,7 @@ const projects = [
   { src: '/HiddenChapter/hidden-chapter-build.png', label: 'Build Process' },
 ],
   takeaway: "This project taught me to combine aesthetic design with complex engineering systems. Integrating electronics, CAD, and mechanical prototyping while ensuring durability and user safety was the core challenge — and the most rewarding part.",
-},
+}, 
 {
   id: 4,
   title: "Piano Playing Octopus Automaton",
@@ -116,7 +116,7 @@ const projects = [
   process: "The team built a working prototype through four iterations: starting with sensor validation and serial monitor output, moving to web-based HUD rendering with live serial data, then wireless BLE data streaming with a standalone HTML HUD, and finally integrating a Micro-OLED screen with a beamsplitter to project through bird-path optics onto the goggle visor. The current prototype uses a 3D-printed enclosure housing a Raspberry Pi Zero, IMU sensor, ESP32, and BME680 temperature sensor. As lead on market research and app development, I conducted competitive analysis against products like Sirius AR and Rekkie, defined the target user persona (avid skiers spending 10+ days per season), and designed the companion app wireframe covering login, HUD configuration, and a navigational map feature for trail data, hazard zones, and live rider tracking.",
   outcome: "A functional prototype validating that live sensor data can be rendered through an optical HUD in real time, alongside a defined go-to-market strategy: a technology licensing model where Arc SSG's HUD, sensor platform, and companion software are licensed to established goggle manufacturers rather than competing directly as a hardware brand. Market sizing placed the addressable premium goggle market at $2.7–3.6 billion annually, with a companion app subscription tier as a secondary recurring revenue stream.",
   takeaway: "This project sharpened my ability to connect user research with product strategy on a hardware-software product — translating a real safety problem into both a validated prototype and a business model. Working across market research, competitive positioning, and app design taught me how technical feasibility, user behavior, and business viability need to move together rather than being solved in isolation.",
-},s
+},
 ]
 
 function Project() {
