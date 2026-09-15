@@ -251,7 +251,7 @@ function Project() {
           style={{ marginBottom: '5rem' }}
         >
           <p style={{ fontSize: '11px', letterSpacing: '0.12em', color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '1.5rem' }}>Overview</p>
-          <p style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', lineHeight: '1.8', maxWidth: '700px' }}>{project.overview}</p>
+          <p style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', lineHeight: '1.8' }}>{project.overview}</p>
         </motion.div>
 
         <motion.div
@@ -386,7 +386,7 @@ function Project() {
           style={{ borderTop: '0.5px solid var(--border)', paddingTop: '3rem' }}
         >
           <p style={{ fontSize: '11px', letterSpacing: '0.12em', color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '1.5rem' }}>Takeaway</p>
-          <p style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', lineHeight: '1.8', maxWidth: '600px' }}>{project.takeaway}</p>
+          <p style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', lineHeight: '1.8' }}>{project.takeaway}</p>
         </motion.div>
 
       </main>
