@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import Cursor from '../components/Cursor'
 
@@ -123,6 +124,10 @@ function Project() {
   const { id } = useParams()
   const navigate = useNavigate()
   const project = projects.find(p => p.id === parseInt(id))
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [id])
 
   if (!project) return (
     <div style={{ padding: '4rem', color: 'var(--text-primary)' }}>
