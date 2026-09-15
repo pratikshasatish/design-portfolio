@@ -17,6 +17,12 @@ const projects = [
   process: "The design features fully interchangeable, interlocking frame sections for unlimited size and configuration options, snap-on decorative borders for aesthetic customization, an accessible magnetic backing system for easy photo changes (designed for users with arthritis or fine motor challenges), and an integrated adjustable hanging mechanism to simplify leveling and reduce wall damage — all engineered with lightweight, durable, cost-effective materials suited for mass production.",
   outcome: "A compact, portable design optimized for shipping and storage, with website integration for virtual visualization, ordering, and tailored accessory selection — positioned as a patent-ready, market-viable product targeting the elderly, families who move frequently, and individuals with disabilities.",
   takeaway: "This project strengthened my ability to connect engineering design with marketing strategy by addressing a technical problem while considering user needs and commercial viability. Moving forward, I plan to refine this design into a patent-ready product and explore production at scale, focusing on target audiences such as the elderly, families who move frequently, and individuals with disabilities.",
+  images: [
+  { src: '/ModularFrame/frame-subsystem-callouts.png', label: 'Subsystem Callouts' },
+  { src: '/ModularFrame/frame-prototype-assembled.png', label: 'Assembled Prototype' },
+  { src: '/ModularFrame/frame-prototype-parts.png', label: 'Component Breakdown' },
+  { src: '/ModularFrame/frame-app-mockups.png', label: 'App & Website Mockups' },
+],
 },
   {
     id: 2,
