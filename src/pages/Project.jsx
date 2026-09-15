@@ -324,26 +324,6 @@ function Project() {
   </motion.div>
 )}
 
-{project.video && (
-  <motion.div
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.6, delay: 0.4 }}
-    style={{ marginBottom: '5rem' }}
-  >
-    <p style={{ fontSize: '11px', letterSpacing: '0.12em', color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '2rem' }}>Demo</p>
-    <video
-      src={project.video}
-      controls
-      style={{
-        width: '100%',
-        borderRadius: '8px',
-        border: '0.5px solid var(--border)',
-      }}
-    />
-  </motion.div>
-)}
-
 {project.images && (
   <motion.div
     initial={{ opacity: 0, y: 20 }}
@@ -357,7 +337,7 @@ function Project() {
       gridTemplateColumns: 'repeat(3, 1fr)',
       gap: '1.5rem',
     }}>
-      {project.images.map((img, i) => (
+            {project.images.map((img, i) => (
         <motion.div
           key={i}
           initial={{ opacity: 0, y: 20 }}
@@ -384,7 +364,47 @@ function Project() {
   </motion.div>
 )}
 
+{project.screens && (
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6, delay: 0.5 }}
+    style={{ marginBottom: '5rem' }}
+  >
+    <p style={{ fontSize: '11px', letterSpacing: '0.12em', color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '2rem' }}>Screens</p>
+    <div style={{
+      display: 'grid',
+      gridTemplateColumns: 'repeat(3, 1fr)',
+      gap: '1.5rem',
+    }}>
+      {project.screens.map((img, i) => (
         <motion.div
+          key={i}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: i * 0.08 }}
+        >
+          <img
+            src={img.src}
+            alt={img.label}
+            style={{
+              width: '100%',
+              borderRadius: '8px',
+              border: '0.5px solid var(--border)',
+              marginBottom: '0.75rem',
+              objectFit: 'cover',
+              aspectRatio: '16/9',
+            }}
+          />
+          <p style={{ fontSize: '12px', color: 'var(--text-muted)', letterSpacing: '0.06em', textAlign: 'center' }}>{img.label}</p>
+        </motion.div>
+      ))}
+    </div>
+  </motion.div>
+)}
+
+          <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
