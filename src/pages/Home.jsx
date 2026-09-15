@@ -533,7 +533,7 @@ function Home() {
             transition={{ duration: 0.6, delay: 0.5 }}
             style={{
               fontSize: '1.2rem',
-              color: 'var(--text-secondary)',
+              color: 'var(--text-primary)',
               lineHeight: '1.7',
               maxWidth: '500px',
               marginBottom: '2rem',

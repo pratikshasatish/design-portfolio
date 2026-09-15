@@ -274,7 +274,7 @@ function Project() {
           ].map(({ label, content }) => (
             <div key={label}>
               <p style={{ fontSize: '11px', letterSpacing: '0.12em', color: 'var(--burgundy-light)', textTransform: 'uppercase', marginBottom: '1rem' }}>{label}</p>
-              <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: '1.8' }}>{content}</p>
+              <p style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', lineHeight: '1.8' }}>{content}</p>
             </div>
           ))}
         </motion.div>
@@ -386,7 +386,7 @@ function Project() {
           style={{ borderTop: '0.5px solid var(--border)', paddingTop: '3rem' }}
         >
           <p style={{ fontSize: '11px', letterSpacing: '0.12em', color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '1.5rem' }}>Takeaway</p>
-          <p style={{ fontSize: '1.1rem', color: 'var(--text-secondary)', lineHeight: '1.8', maxWidth: '600px' }}>{project.takeaway}</p>
+          <p style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', lineHeight: '1.8', maxWidth: '600px' }}>{project.takeaway}</p>
         </motion.div>
 
       </main>
