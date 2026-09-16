@@ -299,7 +299,7 @@ function Project() {
               target="_blank"
               rel="noopener noreferrer"
               style={{
-                display: 'inline-flex',
+                display: 'in line-flex',
                 alignItems: 'center',
                 gap: '0.75rem',
                 fontSize: '14px',

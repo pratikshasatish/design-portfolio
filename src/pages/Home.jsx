@@ -528,19 +528,21 @@ function Home() {
           />
 
           <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            style={{
-              fontSize: '1.2rem',
-              color: 'var(--text-primary)',
-              lineHeight: '1.7',
-              maxWidth: '500px',
-              marginBottom: '2rem',
-            }}
-          >
-            Design is composition. Every detail plays a part.
-          </motion.p>
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 0.6, delay: 0.5 }}
+  style={{
+    fontSize: '1.2rem',
+    fontWeight: '500',
+    letterSpacing: '-0.01em',
+    color: 'var(--text-primary)',
+    lineHeight: '1.7',
+    maxWidth: '500px',
+    marginBottom: '2rem',
+  }}
+>
+  Design is composition. Every detail plays a part.
+</motion.p>
           </motion.div>
 
 
