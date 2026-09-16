@@ -7,7 +7,7 @@ const projects = [
   {
     id: 1,
     title: "Modular Picture Frame",
-    category: "Product Design · Engineering",
+    category: "Product Design",
     year: "2024",
     description: "A modular, customizable frame system designed for maximum versatility and accessibility.",
     color: "#8b1a2a",
@@ -23,7 +23,7 @@ const projects = [
   {
     id: 3,
     title: "The Hidden Chapter",
-    category: "Systems Integration · Engineering",
+    category: "Systems Integration",
     year: "2024",
     description: "A coffee table with a concealed motorized storage compartment activated by a hidden book-pull mechanism.",
     color: "#3a2a6b",
@@ -31,7 +31,7 @@ const projects = [
   {
     id: 4,
     title: "Piano Playing Octopus Automaton",
-    category: "Mechanical Engineering · Fabrication",
+    category: "Systems Integration",
     year: "2024",
     description: "A fully 3D-printed hand-cranked automaton combining mechanical precision with artistic expression.",
     color: "#6b3a2a",
@@ -39,7 +39,7 @@ const projects = [
   {
     id: 5,
     title: "Teaching Piano",
-    category: "Product Design · Arduino",
+    category: "Product Design",
     year: "2024",
     description: "A piano prototype combining visual and tactile feedback with Arduino-based tracking.",
     color: "#2a3a6b",
@@ -47,7 +47,7 @@ const projects = [
   {
     id: 6,
     title: "Artist's Organizer",
-    category: "Product Design · Fabrication",
+    category: "Product Design",
     year: "2024",
     description: "A compact oil painting organizer designed to reduce clutter and maximize efficiency.",
     color: "#5a3a1a",
@@ -55,7 +55,7 @@ const projects = [
   {
   id: 7,
   title: "Arc SSG",
-  category: "Product Design · Hardware/Software",
+  category: "Systems Integration",
   year: "2026",
   description: "A heads-up display goggle system that overlays real-time skiing data directly into the rider's line of sight.",
   color: "#0f3d4a",
@@ -337,13 +337,13 @@ function ProjectRow({ project, index }) {
 
       <div style={{ textAlign: 'right', paddingTop: '0.3rem' }}>
         <p style={{
-          fontSize: '11px',
-          color: 'var(--text-muted)',
-          letterSpacing: '0.08em',
-          marginBottom: '0.4rem',
-        }}>
-          {project.year}
-        </p>
+  fontSize: '11px',
+  color: 'var(--text-muted)',
+  letterSpacing: '0.08em',
+  marginBottom: '0.4rem',
+}}>
+  {project.category}
+</p>
         <motion.div
           animate={{ opacity: hovered ? 1 : 0, x: hovered ? 0 : 8 }}
           transition={{ duration: 0.2 }}
