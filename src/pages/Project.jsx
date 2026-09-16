@@ -60,14 +60,11 @@ const projects = [
     overview: "A systems integration coffee table featuring a concealed, motorized storage compartment activated by a hidden book-pull mechanism. Designed to balance sleek aesthetics with practical functionality, the table integrates electronics, structural engineering, and precision mechanisms to securely store items while maintaining a seamless appearance.",
     problem: "Most furniture either prioritizes aesthetics or functionality, rarely both. The challenge was designing a table that looked completely normal while hiding a fully functional motorized compartment that could be triggered discreetly.",
     process: "We designed the scissor-lift mechanism in SolidWorks, 3D printed all structural components, and integrated a 12V geared motor with polarity reversal switch system. The hidden book-pull trigger was the most challenging part; it needed to feel natural while reliably activating the lift.",
-    outcome: "A fully functional coffee table with a motorized scissor-lift compartment capable of supporting up to 20 lbs, with 8 inches of travel. The book-pull trigger activates seamlessly and the table maintains its aesthetic at all times.",
-    video: '/HiddenChapter/hidden-chapter-demo.mp4',
-    images: [
-      { src: '/HiddenChapter/hidden-chapter-table.png', label: 'Final Table' },
-      { src: '/HiddenChapter/hidden-chapter-mechanism.png', label: 'Scissor-Lift Mechanism' },
-      { src: '/HiddenChapter/hidden-chapter-build.png', label: 'Build Process' },
-    ],
-    takeaway: "This project taught me to combine aesthetic design with complex engineering systems. Integrating electronics, CAD, and mechanical prototyping while ensuring durability and user safety was the core challenge, and the most rewarding part.",
+    overview: "A coffee table with a concealed, motorized storage compartment activated by a hidden book-pull mechanism. The design balances sleek aesthetics with real functionality, integrating electronics, structural engineering, and precision mechanisms to store items securely without giving anything away.",
+problem: "Most furniture prioritizes either looks or function, rarely both. The challenge was building a table that looked completely ordinary while hiding a fully functional motorized compartment that could be triggered discreetly.",
+process: "We designed the scissor-lift mechanism in SolidWorks, 3D printed all structural components, and integrated a 12V geared motor with a polarity reversal switch. The hidden book-pull trigger was the hardest part to get right; it needed to feel natural while reliably activating the lift every time.",
+outcome: "A fully functional coffee table with a motorized scissor-lift compartment that supports up to 20 lbs and travels 8 inches. The trigger activates seamlessly, and the table keeps its normal look at all times.",
+takeaway: "This project taught me to combine aesthetic design with real engineering systems. Getting electronics, CAD, and mechanical prototyping to work together, without compromising durability or safety, was the hardest part and the most rewarding.",
   },
   {
     id: 4,
@@ -77,11 +74,20 @@ const projects = [
     color: "#6b3a2a",
     role: "Mechanical Engineer & Designer",
     skills: ["CAD & Modeling", "Fabrication", "3D Printing", "Mechanical Design"],
-    overview: "A fully 3D-printed hand-cranked automaton designed to resemble an octopus playing a piano, combining mechanical precision with artistic expression to create a dynamic, interactive display piece.",
-    problem: "Purely mechanical automatons often feel static or lifeless; the challenge was creating a hand-cranked mechanism that could produce genuinely lifelike, synchronized motion, coordinating leg movement with music, rather than a single repetitive action.",
-    process: "The automaton uses a PLA-printed frame and body to reduce friction and improve motion efficiency, a custom camshaft system with offset cams to achieve staggered, lifelike octopus leg motion, and an integrated printed gear system to synchronize crank rotation with both leg movement and piano key actuation. Hybrid material selection, PLA for structural components and wood for dowels, balances fluid motion with mechanical stability, and a music box mechanism with tempered steel tongs delivers clear, resonant musical tones.",
-    outcome: "A fully functional hand-cranked automaton with a modular design for easy assembly, troubleshooting, and future upgrades, synchronizing octopus leg motion with piano key actuation and music box tones in a single hand-cranked mechanism.",
-    takeaway: "This project challenged me to merge artistry and engineering by creating a functional, visually engaging automaton. I strengthened my skills in iterative redesign, material science, and precision motion design while learning to troubleshoot synchronization between mechanical and auditory systems. The experience highlighted the power of cross-disciplinary collaboration to solve complex design problems and inspired me to continue exploring mechanical art that blends form, function, and storytelling.",
+    overview: "A fully 3D-printed, hand-cranked automaton built to resemble an octopus playing piano, combining mechanical precision with artistic expression in one interactive piece.",
+problem: "Purely mechanical automatons often feel static or lifeless. The challenge was building a hand-cranked mechanism that produced genuinely lifelike, synchronized motion, coordinating leg movement with music, instead of one repetitive action.",
+process: "The automaton runs on a PLA-printed frame and body to cut friction and improve motion efficiency, a custom camshaft system with offset cams for staggered, lifelike leg motion, and a printed gear system that syncs crank rotation with both leg movement and piano key actuation. Hybrid materials, PLA for structure and wood for dowels, keep the motion fluid without sacrificing stability, and a music box mechanism with tempered steel tongs produces clear, resonant tones.",
+outcome: "A fully functional, hand-cranked automaton with a modular design for easy assembly, troubleshooting, and future upgrades, synchronizing leg motion, key actuation, and music in a single mechanism.",
+takeaway: "This project pushed me to merge artistry and engineering into one working piece. I strengthened my skills in iterative redesign, material science, and precision motion design while learning to troubleshoot synchronization between mechanical and auditory systems. It sharpened my appreciation for mechanical art that blends form, function, and storytelling.",
+  videos: [
+  { src: '/OctopusAutomaton/octopus-mechanism-demo.mp4', label: 'Mechanism Demo' },
+  { src: '/OctopusAutomaton/octopus-full-demo.mov', label: 'Full Demo' },
+],
+images: [
+  { src: '/OctopusAutomaton/octopus-concept-sketch.png', label: 'Concept Sketch' },
+  { src: '/OctopusAutomaton/octopus-piano-front.jpg', label: 'Front View' },
+  { src: '/OctopusAutomaton/octopus-side-view.jpg', label: 'Mechanism View' },
+],
   },
   {
     id: 5,
@@ -91,11 +97,19 @@ const projects = [
     color: "#2a3a6b",
     role: "Product Designer & Engineer",
     skills: ["CAD & Modeling", "Arduino & Electronics", "Product Design", "Prototyping"],
-    overview: "A piano prototype designed to help beginners learn by combining visual and tactile feedback with Arduino-based tracking, creating an engaging, interactive learning experience.",
-    problem: "Beginners learning piano often lack real-time feedback on note accuracy, making it hard to know if they're playing correctly without a teacher present.",
-    process: "The prototype features real-time note tracking and a visual display to guide learners as they play, a user-friendly interface that simplifies complex concepts for beginners, and Arduino microcontroller integration for responsive and accurate key detection. It was built with a modular design to support future upgrades, including sound output and advanced feedback mechanisms.",
-    outcome: "A functional 3D-printed piano prototype with working keys, paired with a hand-drawn note-tracking guide to test the visual feedback concept alongside the hardware.",
-    takeaway: "This project taught me to merge hardware and software into an interactive educational tool. I developed skills in system integration, adaptive design, and user-centered development while identifying key improvements for future iterations. Moving forward, I aim to refine this prototype into a fully functional teaching aid capable of using visual cues to help people with hearing impairments learn piano, combining accessibility features with intuitive design to make music education more inclusive.",
+    overview: "A piano prototype that helps beginners learn by combining visual and tactile feedback with Arduino-based tracking, turning practice into a more engaging, interactive experience.",
+problem: "Beginners often lack real-time feedback on note accuracy, making it hard to know if they're playing correctly without a teacher present.",
+process: "The prototype tracks notes in real time and displays visual feedback as learners play, with an interface built to simplify complex concepts for beginners. Arduino microcontroller integration handles responsive, accurate key detection, and the modular design leaves room for future upgrades like sound output and richer feedback mechanisms.",
+outcome: "A functional 3D-printed piano prototype with working keys, paired with a hand-drawn note-tracking guide to test the visual feedback concept alongside the hardware.",
+takeaway: "This project taught me to merge hardware and software into one interactive learning tool. I built skills in system integration, adaptive design, and user-centered development while identifying what to improve next. I'm now exploring how visual cues could help people with hearing impairments learn piano, combining accessibility with intuitive design to make music education more inclusive.",
+  images: [
+  { src: '/TeachingPiano/piano-prototype.png', label: 'Prototype' },
+  { src: '/TeachingPiano/piano-note-guide.png', label: 'Note Tracking Guide' },
+  { src: '/TeachingPiano/piano-cad-base.png', label: 'Base CAD' },
+  { src: '/TeachingPiano/piano-cad-housing.png', label: 'Housing CAD' },
+  { src: '/TeachingPiano/piano-cad-keys.png', label: 'Key Assembly CAD' },
+  { src: '/TeachingPiano/piano-cad-panel.png', label: 'Panel CAD' },
+],
   },
   {
     id: 6,
@@ -105,11 +119,19 @@ const projects = [
     color: "#5a3a1a",
     role: "Product Designer & Fabricator",
     skills: ["Woodworking", "CAD & Modeling", "Prototyping", "Space Planning"],
-    overview: "A compact oil painting organizer designed to reduce clutter and maximize efficiency in small or shared studio spaces. The design integrates practical storage solutions with an intuitive layout, supporting both painting in progress and organized storage when not in use.",
-    problem: "Painters working in small or shared studio spaces often struggle with cluttered, disorganized setups for palettes, brushes, and paints, slowing down workflow and making materials hard to access mid-painting.",
-    process: "The organizer features a three-tier drawer system for wet palettes, clean brushes, and bulk storage of paints, mediums, and tools, an integrated paint rack and grooved brush holder for efficient access to frequently used supplies, and a hierarchical layout that positions paper towels, wet brushes, and paints for minimal movement while painting, all built into a compact, portable footprint optimized for small or multi-purpose studios.",
-    outcome: "A fully built wooden organizer with a three-tier drawer system, integrated paint rack, and grooved brush holder, designed with modular potential for future customization, including left-handed configurations and expanded storage.",
-    takeaway: "This project taught me how to combine user-focused design with practical engineering. Through iterative prototyping and usability testing, I learned to translate feedback into meaningful improvements while designing for diverse users. I strengthened my skills in space optimization, woodworking, and prototyping while keeping scalability in mind. Future iterations aim to expand accessibility, with features like modular attachments and customizable layouts to meet the needs of more artists.",
+    overview: "A compact oil painting organizer built to cut clutter and maximize efficiency in small or shared studio spaces, with a layout that supports both active painting and clean storage.",
+problem: "Painters working in small or shared studios often deal with cluttered, disorganized setups for palettes, brushes, and paints, slowing down their workflow and making materials hard to reach mid-painting.",
+process: "The organizer uses a three-tier drawer system for wet palettes, clean brushes, and bulk paint storage, an integrated paint rack and grooved brush holder for quick access to frequently used supplies, and a layout that positions paper towels, brushes, and paints to minimize movement while painting. Everything fits into a compact, portable footprint built for small or multi-purpose studios.",
+outcome: "A fully built wooden organizer with a three-tier drawer system, integrated paint rack, and grooved brush holder, designed with room to grow: left-handed configurations and expanded storage among the planned upgrades.",
+takeaway: "This project taught me to combine user-focused design with practical engineering. Through iterative prototyping and usability testing, I learned to turn feedback into real improvements while designing for a range of users. I strengthened my skills in space optimization, woodworking, and prototyping while keeping scalability in mind, with future versions aimed at expanding accessibility through modular attachments and customizable layouts.",
+images: [
+  { src: '/ArtistOrganizer/organizer-early-prototype.png', label: 'Early Prototype' },
+  { src: '/ArtistOrganizer/organizer-brush-rack.png', label: 'Brush Rack' },
+  { src: '/ArtistOrganizer/organizer-drawer-stack.png', label: 'Drawer Stack' },
+  { src: '/ArtistOrganizer/organizer-full-assembly.png', label: 'Full Assembly' },
+  { src: '/ArtistOrganizer/organizer-drawers-open.png', label: 'Drawers Open' },
+  { src: '/ArtistOrganizer/organizer-in-use.png', label: 'In Use' },
+],
   },
   {
     id: 7,
@@ -119,11 +141,24 @@ const projects = [
     color: "#0f3d4a",
     role: "Market Research & App Development",
     skills: ["Market Research", "App Design", "UX Research", "Product Strategy", "Wireframing"],
-    overview: "Arc SSG is a heads-up display (HUD) system for ski and snowboard goggles that overlays real-time data, speed, altitude, temperature, navigation, and phone notifications, directly into the rider's field of view. Designed as a modular add-on compatible with a wide range of goggle styles, the system pairs with a companion mobile app for configuring preferences, tracking run history, and viewing social features, eliminating the need to pull out a phone on the mountain.",
-    problem: "Skiers and snowboarders frequently use their phones on the slopes to check data, respond to messages, or navigate, creating serious safety risks by taking their eyes off the terrain and increasing the chance of collisions or losing gear like phones and gloves in the cold. Existing wearables like smart watches require the same distracting look-away interaction, and no current product puts live data directly into a skier's line of sight.",
-    process: "The team built a working prototype through four iterations: starting with sensor validation and serial monitor output, moving to web-based HUD rendering with live serial data, then wireless BLE data streaming with a standalone HTML HUD, and finally integrating a Micro-OLED screen with a beamsplitter to project through bird-path optics onto the goggle visor. The current prototype uses a 3D-printed enclosure housing a Raspberry Pi Zero, IMU sensor, ESP32, and BME680 temperature sensor. As lead on market research and app development, I conducted competitive analysis against products like Sirius AR and Rekkie, defined the target user persona (avid skiers spending 10+ days per season), and designed the companion app wireframe covering login, HUD configuration, and a navigational map feature for trail data, hazard zones, and live rider tracking.",
-    outcome: "A functional prototype validating that live sensor data can be rendered through an optical HUD in real time, alongside a defined go-to-market strategy: a technology licensing model where Arc SSG's HUD, sensor platform, and companion software are licensed to established goggle manufacturers rather than competing directly as a hardware brand. Market sizing placed the addressable premium goggle market at $2.7–3.6 billion annually, with a companion app subscription tier as a secondary recurring revenue stream.",
-    takeaway: "This project sharpened my ability to connect user research with product strategy on a hardware-software product, translating a real safety problem into both a validated prototype and a business model. Working across market research, competitive positioning, and app design taught me how technical feasibility, user behavior, and business viability need to move together rather than being solved in isolation.",
+    overview: "Arc SSG is a heads-up display (HUD) system for ski and snowboard goggles that overlays real-time data, speed, altitude, temperature, navigation, and phone notifications, directly into the rider's field of view. Built as a modular add-on compatible with a wide range of goggle styles, it pairs with a companion app for configuring preferences, tracking run history, and viewing social features, so riders never need to pull out a phone on the mountain.",
+problem: "Skiers and snowboarders often use their phones on the slopes to check data, respond to messages, or navigate, creating real safety risks by taking their eyes off the terrain and raising the chance of collisions or losing gear like phones and gloves in the cold. Existing wearables like smart watches force the same distracting look-away interaction, and no current product puts live data directly into a skier's line of sight.",
+process: "The team built a working prototype through four iterations: starting with sensor validation and serial monitor output, moving to web-based HUD rendering with live serial data, then wireless BLE data streaming with a standalone HTML HUD, and finally a Micro-OLED screen paired with a beamsplitter to project through bird-path optics onto the goggle visor. The current prototype uses a 3D-printed enclosure housing a Raspberry Pi Zero, IMU sensor, ESP32, and BME680 temperature sensor. As lead on market research and app development, I ran competitive analysis against products like Sirius AR and Rekkie, defined the target user persona (avid skiers spending 10+ days per season), and designed the companion app wireframe, covering login, HUD configuration, and a navigational map feature for trail data, hazard zones, and live rider tracking.",
+outcome: "A functional prototype proving that live sensor data can render through an optical HUD in real time, alongside a defined go-to-market strategy: licensing the HUD, sensor platform, and companion software to established goggle manufacturers instead of competing directly as a hardware brand. Market sizing put the addressable premium goggle market at $2.7 to $3.6 billion annually, with a companion app subscription tier as a secondary recurring revenue stream.",
+takeaway: "This project sharpened my ability to connect user research with product strategy on a hardware-software product, turning a real safety problem into both a validated prototype and a business model. Working across market research, competitive positioning, and app design taught me how technical feasibility, user behavior, and business viability need to move together, not get solved in isolation.",
+  images: [
+  { src: '/ArcSSG/arcssg-hardware-prototype.jpg', label: 'Hardware Prototype' },
+  { src: '/ArcSSG/arcssg-hud-demo.png', label: 'HUD Demo' },
+  { src: '/ArcSSG/arcssg-optics-housing.png', label: 'Optics Housing' },
+  { src: '/ArcSSG/arcssg-electronics-housing.png', label: 'Electronics Housing' },
+  { src: '/ArcSSG/arcssg-app-wireframe.png', label: 'App Wireframe' },
+  { src: '/ArcSSG/arcssg-nav-feature.png', label: 'Navigation Feature' },
+],
+videos: [
+  { src: '/ArcSSG/arcssg-hud-flyover.mp4', label: 'HUD Flyover Demo' },
+  { src: '/ArcSSG/arcssg-nav-map-demo.mp4', label: 'Navigation Map Demo' },
+  { src: '/ArcSSG/arcssg-app-wireframe-demo.mp4', label: 'App Wireframe Walkthrough' },
+],
   },
 ]
 
@@ -325,25 +360,34 @@ function Project() {
           </motion.div>
         )}
 
-        {project.video && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            style={{ marginBottom: '5rem' }}
-          >
-            <p style={{ fontSize: '11px', letterSpacing: '0.12em', color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '2rem' }}>{project.videoLabel || 'Demo'}</p>
-            <video
-              src={project.video}
-              controls
-              style={{
-                width: '100%',
-                borderRadius: '8px',
-                border: '0.5px solid var(--border)',
-              }}
-            />
-          </motion.div>
-        )}
+        {project.videos && (
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6, delay: 0.4 }}
+    style={{ marginBottom: '5rem' }}
+  >
+    <p style={{ fontSize: '11px', letterSpacing: '0.12em', color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '2rem' }}>Demos</p>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+      {project.videos.map((vid, i) => (
+        <div key={i}>
+          <video
+            src={vid.src}
+            controls
+            style={{
+              width: '100%',
+              maxWidth: '700px',
+              borderRadius: '8px',
+              border: '0.5px solid var(--border)',
+              marginBottom: '0.75rem',
+            }}
+          />
+          <p style={{ fontSize: '12px', color: 'var(--text-muted)', letterSpacing: '0.06em' }}>{vid.label}</p>
+        </div>
+      ))}
+    </div>
+  </motion.div>
+)}
 
         {project.images && (
           <motion.div
