@@ -150,18 +150,8 @@ const projects = [
     outcome: "A functional prototype proving that live sensor data can render through an optical HUD in real time, alongside a defined go-to-market strategy: licensing the HUD, sensor platform, and companion software to established goggle manufacturers instead of competing directly as a hardware brand. Market sizing put the addressable premium goggle market at $2.7 to $3.6 billion annually, with a companion app subscription tier as a secondary recurring revenue stream.",
     takeaway: "This project sharpened my ability to connect user research with product strategy on a hardware-software product, turning a real safety problem into both a validated prototype and a business model. Working across market research, competitive positioning, and app design taught me how technical feasibility, user behavior, and business viability need to move together, not get solved in isolation.",
     images: [
-      { src: '/ArcSSG/arcssg-hardware-prototype.jpg', label: 'Hardware Prototype' },
-      { src: '/ArcSSG/arcssg-hud-demo.png', label: 'HUD Demo' },
-      { src: '/ArcSSG/arcssg-optics-housing.png', label: 'Optics Housing' },
-      { src: '/ArcSSG/arcssg-electronics-housing.png', label: 'Electronics Housing' },
-      { src: '/ArcSSG/arcssg-app-wireframe.png', label: 'App Wireframe' },
-      { src: '/ArcSSG/arcssg-nav-feature.png', label: 'Navigation Feature' },
-    ],
-    videos: [
-      { src: '/ArcSSG/arcssg-hud-flyover.mp4', label: 'HUD Flyover Demo' },
-      { src: '/ArcSSG/arcssg-nav-map-demo.mp4', label: 'Navigation Map Demo' },
-      { src: '/ArcSSG/arcssg-app-wireframe-demo.mp4', label: 'App Wireframe Walkthrough' },
-    ],
+  { src: '/ArcSSG/arcssg.webp', label: 'Overview' },
+],
   },
 ]
 
