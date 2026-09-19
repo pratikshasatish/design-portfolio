@@ -387,7 +387,7 @@ function Project() {
             style={{ marginBottom: '5rem' }}
           >
             <p style={{ fontSize: '11px', letterSpacing: '0.12em', color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '2rem' }}>Demos</p>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem' }}>
               {project.videos.map((vid, i) => (
                 <div key={i}>
                   <video
