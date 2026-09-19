@@ -391,16 +391,16 @@ function Project() {
               {project.videos.map((vid, i) => (
                 <div key={i}>
                   <video
-                    src={vid.src}
-                    controls
-                    style={{
-                      width: '100%',
-                      maxWidth: '700px',
-                      borderRadius: '8px',
-                      border: '0.5px solid var(--border)',
-                      marginBottom: '0.75rem',
-                    }}
-                  />
+  src={vid.src}
+  controls
+  style={{
+    width: '100%',
+    maxWidth: '500px',
+    borderRadius: '8px',
+    border: '0.5px solid var(--border)',
+    marginBottom: '0.75rem',
+  }}
+/>
                   <p style={{ fontSize: '12px', color: 'var(--text-muted)', letterSpacing: '0.06em' }}>{vid.label}</p>
                 </div>
               ))}
