@@ -359,25 +359,27 @@ function Project() {
         )}
 
         {project.video && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            style={{ marginBottom: '5rem' }}
-          >
-            <p style={{ fontSize: '11px', letterSpacing: '0.12em', color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '2rem' }}>{project.videoLabel || 'Demo'}</p>
-            <video
-              src={project.video}
-              controls
-              style={{
-                width: '100%',
-                maxWidth: '700px',
-                borderRadius: '8px',
-                border: '0.5px solid var(--border)',
-              }}
-            />
-          </motion.div>
-        )}
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6, delay: 0.4 }}
+    style={{ marginBottom: '5rem' }}
+  >
+    <p style={{ fontSize: '11px', letterSpacing: '0.12em', color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '2rem' }}>{project.videoLabel || 'Demo'}</p>
+    <video
+      src={project.video}
+      controls
+      style={{
+        width: '100%',
+        maxWidth: '350px',
+        maxHeight: '500px',
+        borderRadius: '8px',
+        border: '0.5px solid var(--border)',
+        display: 'block',
+      }}
+    />
+  </motion.div>
+)}
 
         {project.videos && (
           <motion.div
