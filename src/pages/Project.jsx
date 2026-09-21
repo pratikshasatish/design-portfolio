@@ -243,7 +243,7 @@ function Project() {
           }}>
             {project.title}
           </h1>
-          <p style={{ fontSize: '13px', color: 'var(--text-muted)', letterSpacing: '0.06em' }}>
+          <p style={{ fontSize: '13px', color: 'var(--burgundy-light)', letterSpacing: '0.06em' }}>
             {project.year}
           </p>
         </motion.div>
@@ -263,11 +263,11 @@ function Project() {
           }}
         >
           <div>
-            <p style={{ fontSize: '11px', letterSpacing: '0.12em', color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '0.75rem' }}>Role</p>
+            <p style={{ fontSize: '13px', letterSpacing: '0.12em', color: 'var(--burgundy-light)', textTransform: 'uppercase', marginBottom: '0.75rem' }}>Role</p>
             <p style={{ fontSize: '1rem', color: 'var(--text-secondary)' }}>{project.role}</p>
           </div>
           <div>
-            <p style={{ fontSize: '11px', letterSpacing: '0.12em', color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '0.75rem' }}>Skills</p>
+            <p style={{ fontSize: '13px', letterSpacing: '0.12em', color: 'var(--burgundy-light)', textTransform: 'uppercase', marginBottom: '0.75rem' }}>Skills</p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
               {project.skills.map(skill => (
                 <span key={skill} style={{
@@ -290,7 +290,7 @@ function Project() {
           transition={{ duration: 0.6, delay: 0.2 }}
           style={{ marginBottom: '5rem' }}
         >
-          <p style={{ fontSize: '11px', letterSpacing: '0.12em', color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '1.5rem' }}>Overview</p>
+          <p style={{ fontSize: '13px', letterSpacing: '0.12em', color: 'var(--burgundy-light)', textTransform: 'uppercase', marginBottom: '1.5rem' }}>Overview</p>
           <p style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', lineHeight: '1.8' }}>{project.overview}</p>
         </motion.div>
 
@@ -301,7 +301,7 @@ function Project() {
             transition={{ duration: 0.6, delay: 0.4 }}
             style={{ marginBottom: '5rem' }}
           >
-            <p style={{ fontSize: '11px', letterSpacing: '0.12em', color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '2rem' }}>Prototype</p>
+            <p style={{ fontSize: '13px', letterSpacing: '0.12em', color: 'var(--burgundy-light)', textTransform: 'uppercase', marginBottom: '2rem' }}>Prototype</p>
             
               <a href={project.figmaLink}
               target="_blank"
@@ -499,7 +499,7 @@ function Project() {
           transition={{ duration: 0.6 }}
           style={{ borderTop: '0.5px solid var(--border)', paddingTop: '3rem' }}
         >
-          <p style={{ fontSize: '11px', letterSpacing: '0.12em', color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '1.5rem' }}>Takeaway</p>
+          <p style={{ fontSize: '13px', letterSpacing: '0.12em', color: 'var(--burgundy-light)', textTransform: 'uppercase', marginBottom: '1.5rem' }}>Takeaway</p>
           <p style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', lineHeight: '1.8' }}>{project.takeaway}</p>
         </motion.div>
 
