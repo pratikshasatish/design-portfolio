@@ -486,7 +486,7 @@ function Project() {
             { label: 'Outcome', content: project.outcome },
           ].map(({ label, content }) => (
             <div key={label}>
-              <p style={{ fontSize: '11px', letterSpacing: '0.12em', color: 'var(--burgundy-light)', textTransform: 'uppercase', marginBottom: '1rem' }}>{label}</p>
+              <p style={{ fontSize: '13px', letterSpacing: '0.12em', color: 'var(--burgundy-light)', textTransform: 'uppercase', marginBottom: '1rem' }}>{label}</p>
               <p style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', lineHeight: '1.8' }}>{content}</p>
             </div>
           ))}
