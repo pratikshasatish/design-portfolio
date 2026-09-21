@@ -217,7 +217,7 @@ function Project() {
         </span>
       </nav>
 
-      <main style={{ padding: '10rem 6rem 8rem', maxWidth: '1200px', margin: '0 auto' }}>
+            <main style={{ padding: '10rem 6rem 8rem', maxWidth: '1200px', margin: '0 auto' }}>
 
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -294,31 +294,6 @@ function Project() {
           <p style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', lineHeight: '1.8' }}>{project.overview}</p>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr 1fr',
-            gap: '3rem',
-            marginBottom: '5rem',
-            borderTop: '0.5px solid var(--border)',
-            paddingTop: '3rem',
-          }}
-        >
-          {[
-            { label: 'Problem', content: project.problem },
-            { label: 'Process', content: project.process },
-            { label: 'Outcome', content: project.outcome },
-          ].map(({ label, content }) => (
-            <div key={label}>
-              <p style={{ fontSize: '11px', letterSpacing: '0.12em', color: 'var(--burgundy-light)', textTransform: 'uppercase', marginBottom: '1rem' }}>{label}</p>
-              <p style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', lineHeight: '1.8' }}>{content}</p>
-            </div>
-          ))}
-        </motion.div>
-
         {project.figmaLink && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -359,27 +334,27 @@ function Project() {
         )}
 
         {project.video && (
-  <motion.div
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.6, delay: 0.4 }}
-    style={{ marginBottom: '5rem' }}
-  >
-    <p style={{ fontSize: '11px', letterSpacing: '0.12em', color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '2rem' }}>{project.videoLabel || 'Demo'}</p>
-    <video
-      src={project.video}
-      controls
-      style={{
-        width: '100%',
-        maxWidth: '350px',
-        maxHeight: '500px',
-        borderRadius: '8px',
-        border: '0.5px solid var(--border)',
-        display: 'block',
-      }}
-    />
-  </motion.div>
-)}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            style={{ marginBottom: '5rem' }}
+          >
+            <p style={{ fontSize: '11px', letterSpacing: '0.12em', color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '2rem' }}>{project.videoLabel || 'Demo'}</p>
+            <video
+              src={project.video}
+              controls
+              style={{
+                width: '100%',
+                maxWidth: '350px',
+                maxHeight: '500px',
+                borderRadius: '8px',
+                border: '0.5px solid var(--border)',
+                display: 'block',
+              }}
+            />
+          </motion.div>
+        )}
 
         {project.videos && (
           <motion.div
@@ -393,18 +368,18 @@ function Project() {
               {project.videos.map((vid, i) => (
                 <div key={i}>
                   <video
-  src={vid.src}
-  controls
-  style={{
-    width: '100%',
-    maxWidth: '350px',
-    maxHeight: '500px',
-    borderRadius: '8px',
-    border: '0.5px solid var(--border)',
-    marginBottom: '0.75rem',
-    display: 'block',
-  }}
-/>
+                    src={vid.src}
+                    controls
+                    style={{
+                      width: '100%',
+                      maxWidth: '350px',
+                      maxHeight: '500px',
+                      borderRadius: '8px',
+                      border: '0.5px solid var(--border)',
+                      marginBottom: '0.75rem',
+                      display: 'block',
+                    }}
+                  />
                   <p style={{ fontSize: '12px', color: 'var(--text-muted)', letterSpacing: '0.06em' }}>{vid.label}</p>
                 </div>
               ))}
@@ -491,6 +466,31 @@ function Project() {
             </div>
           </motion.div>
         )}
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          style={{
+            display: 'grid',
+            gridTemplateColumns: '1fr 1fr 1fr',
+            gap: '3rem',
+            marginBottom: '5rem',
+            borderTop: '0.5px solid var(--border)',
+            paddingTop: '3rem',
+          }}
+        >
+          {[
+            { label: 'Problem', content: project.problem },
+            { label: 'Process', content: project.process },
+            { label: 'Outcome', content: project.outcome },
+          ].map(({ label, content }) => (
+            <div key={label}>
+              <p style={{ fontSize: '11px', letterSpacing: '0.12em', color: 'var(--burgundy-light)', textTransform: 'uppercase', marginBottom: '1rem' }}>{label}</p>
+              <p style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', lineHeight: '1.8' }}>{content}</p>
+            </div>
+          ))}
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
