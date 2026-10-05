@@ -37,39 +37,19 @@ a {
 }
 
 @media (max-width: 768px) {
-  .site-nav {
-    padding: 1.25rem 1.5rem !important;
-  }
-  .nav-links {
-    gap: 1rem !important;
-  }
-  .nav-links a {
-    font-size: 11px !important;
-  }
-}
-
-@media (max-width: 768px) {
   .hero-section {
     display: flex !important;
     flex-direction: column !important;
     padding: 7rem 1.5rem 3rem !important;
     min-height: auto !important;
   }
-    .hero-wave {
-    position: relative !important;
-    top: 0 !important;
-    left: 50% !important;
-    width: 100vw !important;
-    transform: translateX(-50%) !important;
-    opacity: 0.4 !important;
-    order: 2;
-    margin-top: -1rem;
+  .hero-wave {
+    display: none !important;
   }
   .hero-text {
-    order: 1;
     max-width: 100% !important;
   }
-    .hero-eyebrow {
+  .hero-eyebrow {
     white-space: normal !important;
     font-size: 11px !important;
   }
