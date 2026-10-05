@@ -54,3 +54,12 @@ a {
     font-size: 11px !important;
   }
 }
+  .about-section {
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 4rem 1.5rem !important;
+    gap: 2rem !important;
+  }
+  .about-photo {
+    height: 300px !important;
+  }

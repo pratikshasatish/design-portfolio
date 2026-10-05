@@ -587,7 +587,7 @@ function Home() {
         ))}
       </section>
 
-      <section id="about" style={{
+      <section id="about" className="about-section" style={{
         padding: '8rem 4rem',
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
@@ -601,6 +601,7 @@ function Home() {
           transition={{ duration: 0.6 }}
         >
           <img
+            className="about-photo"
             src="/IMG_4461.JPG"
             alt="Pratiksha Satish"
             style={{
