@@ -63,3 +63,14 @@ a {
   .about-photo {
     height: 300px !important;
   }
+    .contact-section {
+    padding: 4rem 1.5rem !important;
+  }
+  .contact-section h2 {
+    font-size: 2rem !important;
+  }
+  .contact-link {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.4rem !important;
+  }

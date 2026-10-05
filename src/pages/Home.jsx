@@ -703,9 +703,9 @@ function Home() {
         </motion.div>
       </section>
 
-      <section id="contact" style={{
-        padding: '8rem 4rem',
-        borderTop: '0.5px solid var(--border)',
+      <section id="contact" className="contact-section" style={{
+       padding: '8rem 4rem',
+       borderTop: '0.5px solid var(--border)',
       }}>
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -743,7 +743,7 @@ function Home() {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hoverable"
+                className="hoverable contact-link"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -756,7 +756,7 @@ function Home() {
                   borderTop: '0.5px solid var(--border)',
                   color: 'var(--text-secondary)',
                   transition: 'color 0.2s',
-                }}
+              }}
                 onMouseEnter={e => {
                   e.currentTarget.style.color = 'var(--text-primary)'
                   e.currentTarget.style.borderTopColor = 'var(--burgundy)'
