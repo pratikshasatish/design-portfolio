@@ -279,7 +279,7 @@ function ProjectRow({ project, index }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-80px' }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
-      className="hoverable"
+      className="hoverable project-row"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       onClick={() => navigate(`/project/${project.id}`)}
@@ -568,7 +568,7 @@ function Home() {
 </motion.div>
       </section>
 
-      <section id="work" style={{ padding: '6rem 4rem 8rem' }}>
+      <section id="work" className="work-section" style={{ padding: '6rem 4rem 8rem' }}>
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
