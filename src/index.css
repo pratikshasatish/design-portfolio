@@ -47,3 +47,19 @@ a {
     font-size: 11px !important;
   }
 }
+
+@media (max-width: 768px) {
+  .hero-section {
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 7rem 1.5rem 3rem !important;
+    min-height: auto !important;
+  }
+  .hero-wave {
+    position: relative !important;
+    width: 100% !important;
+    left: 0 !important;
+    transform: none !important;
+    opacity: 0.4 !important;
+  }
+}

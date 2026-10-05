@@ -466,7 +466,7 @@ function Home() {
 </div>
       </nav>
 
-      <section ref={heroRef} style={{
+      <section ref={heroRef} className="hero-section" style={{
   padding: '10rem 4rem 6rem',
   minHeight: '100vh',
   display: 'grid',
@@ -477,6 +477,7 @@ function Home() {
   position: 'relative',
 }}>
         <motion.div
+  className="hero-text"
   initial={{ opacity: 0, y: 30 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8 }}
@@ -547,6 +548,7 @@ function Home() {
 
 
               <motion.div
+  className="hero-wave"
   initial={{ opacity: 0 }}
   animate={{ opacity: 1 }}
   transition={{ duration: 0.8, delay: 0.3 }}
