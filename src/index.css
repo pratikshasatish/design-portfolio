@@ -74,3 +74,18 @@ a {
     align-items: flex-start !important;
     gap: 0.4rem !important;
   }
+    .site-nav {
+    padding: 1rem 1.25rem !important;
+    flex-wrap: wrap !important;
+    row-gap: 0.75rem !important;
+  }
+  .nav-logo {
+    font-size: 11px !important;
+  }
+  .nav-links {
+    gap: 0.75rem !important;
+    flex-wrap: wrap !important;
+  }
+  .nav-links a {
+    font-size: 10px !important;
+  }

@@ -403,6 +403,7 @@ function Home() {
         backdropFilter: 'blur(12px)',
       }}>
         <motion.span
+          className="nav-logo"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
