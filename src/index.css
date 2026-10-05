@@ -35,3 +35,15 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+@media (max-width: 768px) {
+  .site-nav {
+    padding: 1.25rem 1.5rem !important;
+  }
+  .nav-links {
+    gap: 1rem !important;
+  }
+  .nav-links a {
+    font-size: 11px !important;
+  }
+}

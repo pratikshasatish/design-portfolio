@@ -388,7 +388,7 @@ function Home() {
     <div style={{ cursor: 'none' }}>
       <Cursor />
 
-      <nav style={{
+      <nav className="site-nav" style={{
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
@@ -414,7 +414,7 @@ function Home() {
         >
           PRATIKSHA SATISH
         </motion.span>
-        <div style={{ display: 'flex', gap: '2.5rem', alignItems: 'center' }}>
+        <div className="nav-links" style={{ display: 'flex', gap: '2.5rem', alignItems: 'center' }}>
   {['Work', 'About', 'Contact'].map((item, i) => (
     <motion.a
       key={item}
